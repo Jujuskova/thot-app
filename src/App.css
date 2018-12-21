@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.leftPushed {
+  margin-left: 20px;
+}
+
+.blue-text {
+  color: #2699FB;
+}
+.centeredContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.blue-text-bold {
+  color: #2699FB;
+  font-weight: bold;
+}
+.white-text {
+  color: white;
+}
+.white-text-bold {
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,29 @@
+.KeyWordsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 25px;
+    margin-bottom: 15px;
+
+        // .fa-angle-down{
+        //     width: 20px;
+        //     height: 20px;
+        //     position: relative;
+        //     bottom: 56px;
+        //     left: 333px;
+        //     font-size: 2em;
+        // }
+
+        img{
+            margin: -2%;
+            width: 8%;
+            height: 8%;
+            &:hover{
+                cursor: pointer;
+            }
+            &:active{
+                transform: translateY(-2px);
+            }
+        }
+}

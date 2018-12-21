@@ -1,0 +1,199 @@
+.profile-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../../assets/images/bg2.png');
+    background-size: 100%;
+    color: white;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        bottom: 0;
+        background: #000c;
+    }
+
+    .profile-background {
+
+    }
+
+    .profile-header {
+        width: 100%;
+        height: 25vh;
+        background-color: #222;
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        z-index: 2;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+
+        a {
+            color: #f6e27f;
+            font-size: 1.7rem;
+            cursor: pointer;
+            .fas {
+                padding: 5px;
+                border-radius: 100%;
+                background-color: #fff;
+                border: 2px #f6e27f solid;
+            }
+        }
+
+        img {
+            width: 100px;
+            border: 2px solid #f3F3F3;
+            border-radius: 100%;
+            box-shadow: 3px 3px 2px #5d5b5b;
+            margin-right: 50px;
+
+        }
+    }
+
+    .profile-info {
+        width: 100%;
+        height: 15vh;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        z-index: 2;
+        .profile-content {
+            justify-self: flex-start;
+            margin-left: 20px;
+            h4 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .profile-follow {
+            border: 3px #f6e27f solid;
+            padding: 10px 27px;
+            border-radius: 5px;
+            background: white;
+            color: #f6e27f;
+            z-index: 2;
+            box-shadow: 1px 1px 2px #222;
+            font-size: 1.2rem;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+        }
+        .profile-follow.active {
+            border: 3px white solid;
+            background: #f6e27f;
+            color: white;
+            box-shadow: 1px 1px 2px #222;
+            font-size: 1.2rem;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .profile-description {
+        width: 100%;
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        z-index: 2;
+        margin-bottom: 5px;
+
+        p{
+            text-align: justify;
+            padding: 20px;
+            position: relative;
+            &:before {
+                content: " ";
+                position: absolute;
+                width: 60%;
+                height: 1px;
+                top: 0;
+                background: #f6e27f;
+                left: 20%
+            }
+            &:after {
+                content: " ";
+                position: absolute;
+                width: 60%;
+                height: 1px;
+                bottom: 0;
+                background: #f6e27f;
+                right: 20%
+            }
+        }
+    }
+
+    .profile-skills-container {
+        width: 100%;
+        height: 24vh;
+        display: grid;
+        z-index: 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        //background: #f6e27f;
+        border-radius: 3px;
+        //opacity: 0.8;
+        .profile-skills {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.1rem;
+            justify-content: center;
+            p {
+                padding: 7px 15px; 
+                margin: 5px;
+                //border: 1px solid #fff;
+                border-radius: 5px;
+                background: #f6e27f;
+                color: white;
+                box-shadow: 1px 1px 2px #222;
+            }
+        }
+
+    }
+
+    .profile-contact {
+        width: 100%;
+        height: 8vh;
+        display: grid;
+        z-index: 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        a {
+            margin: 10px; 
+            align-self: end;
+            justify-self: end;
+            text-align: center;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: white;
+            &:hover {
+                text-decoration: none;
+            }
+            .fas {
+                font-size: 1.7rem;
+                color: #f6e27f;
+            }
+            p {
+                margin-top: -5px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
